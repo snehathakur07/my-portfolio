@@ -23,7 +23,7 @@ var transporter = nodemailer.createTransport({
 )
 
 app.get("/", (req, res) => {
-    const indexPath = path.join(__dirname, "index.html");
+    const indexPath = path.join(__dirname, "public", "index.html");
     console.log(indexPath)
     res.sendFile(indexPath);
 })
