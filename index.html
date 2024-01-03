@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="asset/styles/styles.css" rel="stylesheet">
+    <title>Sneha Thakur</title>
+    <link rel="icon" type="image/png" href="asset/favicons/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Noto+Sans+Armenian:wght@500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Noto+Sans+Armenian:wght@500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/01a417dace.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script> -->
+
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-wrap">
+            <ul>
+                <li class="home active"><a href="#home"><i class="fa-solid fa-house"></i></a></li>
+                <li class="about"><a href="#about"><i class="fa-solid fa-user"></i></a></li>
+                <li class="proj"><a href="#projects"><i class="fa-solid fa-code"></i></a></li>
+                <li class="cont"><a href="#contact"><i class="fa-solid fa-address-book"></i></a></li>
+            </ul>
+            <!-- <div class="active-bar"></div> -->
+        </div>
+    </nav>
+
+    <canvas id="projector"></canvas>
+
+
+    <div class="container" id="home">
+        <!-- <p>hello, I'm</p> -->
+        <h1>Sneha Thakur</h1>
+        <p>a WEB DEVELOPER</p>
+        <button class="button"><a href="asset/CV/Sneha Thakur.pdf" download="SNEHA-THAKUR-CV.pdf">View CV</a><i
+                class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+
+
+    <div class="box" id="about">
+        <h1>ABOUT</h1>
+        <div class="block">
+            <div class="col">
+                <div class="hexagon"><i class="fa-solid fa-laptop"></i></div>
+                <h2>Responsive</h2>
+                <p>My versatile layouts seamlessly adapt to any screen size, big or small.</p>
+            </div>
+            <div class="col">
+                <div class="hexagon"><i class="fa-solid fa-lightbulb"></i></div>
+                <h2>Intuitive</h2>
+                <p>I prioritize a seamless and enjoyable UX/UI for users.</p>
+            </div>
+            <div class="col">
+                <div class="hexagon"><i class="fa-solid fa-rocket"></i></div>
+                <h2>Dynamic</h2>
+                <p>I enjoy transforming static websites into dynamic, lively pages.</p>
+            </div>
+        </div>
+
+        <div class="me">
+            <div class="with-img">
+                <div class="image"><img src="asset/asset//imgonline-com-ua-shape-1VyPalhi1B0bs17.png" width="230" alt="" />
+                </div>
+                <div class="intro">
+                    <p>
+                        I'm a budding front-end developer and a student pursuing B.Tech in Computer Science at NIT
+                        Hamirpur. Eager to learn and passionate about creating engaging interfaces. <br><a
+                            href="#contact">Let's
+                            build something
+                            extraordinary together!</a></p>
+                </div>
+            </div>
+            <div class="skills">
+                <h2>My Skills</h2>
+                <div class="inside">
+                    <p>C/C++</p>
+                    <p>DSA</p>
+                    <p>OOPS</p>
+                    <p> HTML</p>
+                    <p>CSS</p>
+                    <p>JS</p>
+                    <p>jQuery</p>
+                    <p>SASS</p>
+                    <p>Node.js</p>
+                    <p>Express.js</p>
+                    <p>EJS</p>
+                    <p>REST API</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="box projects" id="projects">
+        <h1>PROJECTS</h1>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="img-tiles">
+                    <div class="tile active-tile"><img src="asset/asset//mind.png" alt="" width="700" onclick="openMind()"></div>
+                    <div class="tile"><img src="asset/asset//weather-snap.png" alt="" width="700"></div>
+                    <div class="tile"><img src="asset/asset//to-do.png" alt="" width="700"></div>
+                    <div class="tile"><img src="asset/asset//bolg-nest.png" alt="" width="700"></div>
+                </div>
+            </div>
+            <span class="left" onclick="left()">
+                <i class="fa-solid fa-chevron-left"></i>
+            </span>
+            <span class="right" onclick="right()">
+                <i class="fa-solid fa-chevron-right"></i>
+
+                <!-- <img src="asset//arrow.png" width="50" alt="arrow"> -->
+            </span>
+            <div class="circles">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+    <div class="box contact" id="contact">
+        <div class="tri">
+            <img src="asset/pic/tri.png" alt="" width="100%">
+        </div>
+        <h1>CONTACT</h1>
+        <div class="form">
+            <h4>Have a question or want to work together?</h4>
+
+            <form action="/" method="post">
+                <div>
+                    <input type="text" placeholder=" " required class="input" name="name"><label>Name</label>
+                </div>
+                <div>
+                    <input type="email" placeholder=" " required class="input" name="email"><label>Email</label>
+                </div>
+                <div>
+                    <textarea type="text" placeholder="" name="message" required name="message"></textarea>
+                    <label>Your message</label>
+                </div>
+                <button class="button">SEND</button>
+                <!-- <input type="button" value="SUBMIT" id="submit" class="button"> -->
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="btn">
+            <button class="up" title="Go Up"><a href="#home"><i class="fa-solid fa-angles-up"></i></a></button>
+        </div>
+        <div class="links">
+            <div>
+                <div class="link">
+                    <a href="https://www.linkedin.com/in/sneha-thakur-" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <div class="tag">
+                    <p>LinkedIN</p>
+                </div>
+            </div>
+
+            <div class="ig">
+                <div class="link">
+                    <a href="https://www.instagram.com/snehaa07._?igsh=M2JuNmxhYjgzY2hv" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="tag">
+                    <p>Instagram</p>
+                </div>
+            </div>
+
+            <div class="git">
+                <div class="link">
+                    <a href="https://github.com/snehathakur07" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="tag">
+                    <p>GitHub</p>
+                </div>
+            </div>
+        </div>
+        <p>SNEHA THAKUR ©2023</p>
+    </div>
+    <script src="asset/functions/script.js"></script>
+    <script src="asset/functions/function.js"></script>
+
+</body>
+
+</html>
