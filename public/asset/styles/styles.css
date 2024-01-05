@@ -101,7 +101,7 @@ ul {
 
     border-radius: 500px;
     /* border: 3px solid #0E0F19; */
-    box-shadow: 0 0 5px -2px black;
+    box-shadow: 0px 5px 5px -3px black;
 
 }
 
@@ -350,6 +350,7 @@ button a {
     gap: rem;
     text-align: center;
     background-color: #00B3B5;
+    /* background:linear-gradient(20deg,#00B3B5,#83fdff); */
     border-radius: 20px;
     box-shadow: 0 0 5px -1px black;
     padding: 2rem 3rem;
@@ -395,17 +396,18 @@ button a {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 2.5rem;
+    column-gap: 5rem;
     row-gap: 2rem;
     justify-content: center;
     align-items: center;
 }
-
+.inside>*{transition:all 0.2s ease-in-out;}
+.inside>*:hover{transform:scale(1.2)}
 .me a {
     text-decoration: underline;
     color: blue;
 }
-
+/* 
 .inside p {
     width: fit-content;
     background-color: #0e0f19a1;
@@ -414,10 +416,10 @@ button a {
     border-radius: 10px;
     box-shadow:0 0 5px -2px black inset;
     transition: all 0.3s ease-in-out;
-    /* border: 2px solid #0e0f1915; */
+     border: 2px solid #0e0f1915; 
     background-color: white;
     color: #0E0F19;
-}
+} */
 
 .inside p:hover {
     background-color:#00B3B5;

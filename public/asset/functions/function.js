@@ -15,6 +15,7 @@ window.addEventListener("scroll", () => {
 
 })
 
+
 function setactive(active) {
   document.querySelector(".home").classList.remove("active")
   document.querySelector(".about").classList.remove("active")
@@ -24,7 +25,7 @@ function setactive(active) {
 }
 
 var myLink = "https://mind2023.nith.ac.in/";
-function openMind(){
+function openMind() {
   window.open(myLink, "_blank");
 }
 
@@ -112,7 +113,14 @@ function carousel() {
   }, 4000);
 }
 
-carousel();
+function handleScroll() {
+  if (window.scrollY >= document.querySelector(".projects").offsetTop) {
+    carousel();
+    window.removeEventListener("scroll", handleScroll);
+  }
+}
+
+window.addEventListener("scroll", handleScroll);
 
 document.querySelectorAll("span").forEach((span) => {
   span.addEventListener("click", () => {
