@@ -32,7 +32,8 @@ canvas {
     /* Opera 11.10+ */
     background: -ms-linear-gradient(90deg ,#090A0F, #1B2735,#090A0F);
     /* IE10+ */
-    background: linear-gradient(90deg, #1B2735 ,#090A0F, #1B2735);
+    background: #090A0F;
+    /* background: linear-gradient(45deg, #090A0F ,#1B2735); */
     /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#191d1e', endColorstr='#283139', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
@@ -159,8 +160,6 @@ nav ul li a {
 
 .active a {
     color: white;
-    /* transform: scale(1.2); */
-    /* padding: 0.1rem 0.4rem; */
 }
 
 .container {
@@ -855,7 +854,8 @@ button a {
     .nav-wrap {
         width: 90%;
     }
-
+    .nav-wrap ul{gap:0.7rem;}
+    .nav-wrap ul li{box-shadow:none;}
     .projects {
         min-height: fit-content !important;
     }
@@ -863,12 +863,13 @@ button a {
     #home h1 {
         font-size: 4.5rem;
         text-align: center;
-        line-height: 12vh;
+        line-height: 9vh;
         /* margin-bottom: 3rem; */
         letter-spacing: 0;
     }
 
     #home p {
+        margin-top:1rem;
         font-size: 1rem
     }
 
@@ -920,4 +921,5 @@ button a {
         width:60px;
     }
     .contact h4{padding:0 3rem}
+    .active{transform:none;}
 }

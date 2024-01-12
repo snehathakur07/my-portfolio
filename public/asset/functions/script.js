@@ -23,7 +23,7 @@ var ParticleEngine = (function() {
 								{id:"large", num:10, fromX:0, toX:this.totalWidth, ballwidth:30,  alphamax:0.2, areaHeight:1, color:"pink", fill:true}];
 		this.particleArray = [];
 		this.lights = [{ellipseWidth:400, ellipseHeight:100, alpha:0.6, offsetX:0, offsetY:0, color:"#0E0F19"}, 
-						{ellipseWidth:350, ellipseHeight:250, alpha:0.3, offsetX:-50, offsetY:0, color:"#00b3b58f"}, 
+						{ellipseWidth:350, ellipseHeight:250, alpha:0.3, offsetX:-50, offsetY:0, color:"#00b3b563"}, 
 						{ellipseWidth:100, ellipseHeight:80, alpha:0.2, offsetX:80, offsetY:-50, color:"#9316206a"}];
 
 		this.stage.compositeOperation = _ParticleEngine.compositeStyle;
