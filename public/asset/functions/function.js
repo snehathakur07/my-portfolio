@@ -132,4 +132,4 @@ document.querySelectorAll("span").forEach((span) => {
       span.classList.remove(classToAdd)
     }, 200);
   })
-})
+})  
