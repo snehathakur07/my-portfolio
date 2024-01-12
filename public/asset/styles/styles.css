@@ -6,9 +6,11 @@
     font-family: 'Poppins', sans-serif;
     /* overflow-x: hidden; */
     scroll-behavior: smooth;
-
 }
-
+::selection{
+    background-color: #00B3B5;
+    color:white;
+}
 *:not(.carousel *, .carousel) {
     max-width: 100vw;
 }
