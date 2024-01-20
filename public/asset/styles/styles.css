@@ -710,7 +710,6 @@ button a {
     background-color: #931620;
     border: none;
 }
-
 .skills{min-width:50%;}
 /* media queries */
 @media(max-width:1490px){
