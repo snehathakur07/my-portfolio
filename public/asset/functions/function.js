@@ -7,7 +7,10 @@ window.addEventListener("scroll", () => {
 
   if (scroll < aboutOffset) setactive("home")
 
-  if (scroll >= aboutOffset && scroll < projOffset) setactive("about")
+  if (scroll >= aboutOffset && scroll < projOffset) {
+    setactive("about")
+    
+  }
 
   if (scroll >= projOffset && scroll < contOffset) setactive("proj")
 
@@ -120,7 +123,21 @@ function handleScroll() {
   }
 }
 
+
 window.addEventListener("scroll", handleScroll);
+
+function reveal(){
+  var reveals=document.querySelectorAll(".reveal");
+  reveals.forEach(box=> {
+    var windowHeight = window.innerHeight;
+    var elementTop = box.getBoundingClientRect().top;
+    var elementVisible = 150;
+    if (elementTop < windowHeight - elementVisible) {
+      box.classList.add("revealed");
+    } 
+  });
+}
+window.addEventListener("scroll",reveal);
 
 document.querySelectorAll("span").forEach((span) => {
   span.addEventListener("click", () => {
